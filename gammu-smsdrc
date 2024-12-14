@@ -1,0 +1,15 @@
+[gammu]
+device = /dev/ttyUSB0
+connection = at19200
+gammucoding=utf8
+
+[smsd]
+service = files
+logfile = /var/log/gammu-smsd/gammu-smsd.log
+debuglevel = 1
+CheckSecurity = 0
+RunOnReceive = /scripts/on-receive.sh
+inboxpath = /var/spool/gammu-smsd/inbox/
+outboxpath = /var/spool/gammu-smsd/outbox/
+sentsmspath = /var/spool/gammu-smsd/sent/
+errorsmspath = /var/spool/gammu-smsd/error/
