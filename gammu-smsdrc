@@ -2,7 +2,7 @@
 device = /dev/ttyUSB0
 connection = at19200
 gammucoding=utf8
-atgen_setCNMI=2,0,0,2,1
+# atgen_setCNMI=2,0,0,2,1
 
 [smsd]
 service = files
